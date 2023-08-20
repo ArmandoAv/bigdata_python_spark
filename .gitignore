@@ -1,0 +1,4 @@
+# Ignorar las carpetas de checkpoint y peliculas_recomendadas que se crean 
+# con la ejecucion del archivo 16_Recomendaciones_Peliculas.py
+salidas/checkpoint
+salidas/peliculas_recomendadas
