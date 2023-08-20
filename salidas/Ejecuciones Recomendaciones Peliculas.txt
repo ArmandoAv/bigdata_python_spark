@@ -1,0 +1,90 @@
+Primera ejecucion para el usuario 0 - Bart
+
+
+Mejores recomendaciones para el usuario Bart:
+
+Endless Summer 2, The (1994) score 8.177842927897512
+8 Heads in a Duffel Bag (1997) score 8.042158598698258
+Alphaville (1965) score 7.857419234606248
+Primary Colors (1998) score 6.796092988229289
+Harlem (1993) score 6.648786386602277
+Bitter Moon (1992) score 6.356447825545696
+Deep Rising (1998) score 6.318736657358748
+Zeus and Roxanne (1997) score 6.318269854103631
+Cronos (1992) score 6.2813168076061965
+Lost in Space (1998) score 6.280764636852303
+
+
+
+Segunda ejecucion para el usuario 0 - Bart
+
+
+Mejores recomendaciones para el usuario Bart:
+
+Withnail and I (1987) score 7.363009723902701
+Love Affair (1994) score 7.228882775689231
+Angel Baby (1995) score 7.198118153498533
+Alphaville (1965) score 7.0213500634794475
+Secret Agent, The (1996) score 6.84596601395138
+Dream With the Fishes (1997) score 6.782941593576155
+Unzipped (1995) score 6.574569171673839
+She's So Lovely (1997) score 6.5230297985417725
+Conan the Barbarian (1981) score 6.454171214255139
+Haunted World of Edward D. Wood Jr., The (1995) score 6.406351572881913
+
+
+
+Tercera ejecucion para el usuario 0 - Bart
+
+
+Mejores recomendaciones para el usuario Bart:
+
+Welcome To Sarajevo (1997) score 7.756109261740489
+Warriors of Virtue (1997) score 6.611567406048852
+Withnail and I (1987) score 6.549649495242889
+Low Down Dirty Shame, A (1994) score 6.345215400889547
+Kicking and Screaming (1995) score 6.227568999908401
+Hard Eight (1996) score 6.018150957632569
+Dream With the Fishes (1997) score 5.969287656007529
+Roommates (1995) score 5.941099015625033
+Naked (1993) score 5.832381666398755
+Firestorm (1998) score 5.698978317642037
+
+
+
+Cuarta ejecucion para el usuario 0 - Bart
+
+
+Mejores recomendaciones para el usuario Bart:
+
+Unzipped (1995) score 7.685493210454986
+Mina Tannenbaum (1994) score 6.506096036449293
+Faithful (1996) score 6.355794757841894
+Fifth Element, The (1997) score 6.326589033633154
+Mortal Kombat (1995) score 6.3172052065666815
+Anna Karenina (1997) score 6.311549418355759
+Stupids, The (1996) score 6.2427364375342025
+Quest, The (1996) score 6.229552375880691
+Ref, The (1994) score 6.097800721554108
+Inspector General, The (1949) score 6.083676345300507
+
+
+
+Quinta ejecucion para el usuario 0 - Bart
+
+Mejores recomendaciones para el usuario Bart:
+
+Cemetery Man (Dellamorte Dellamore) (1994) score 7.983404102680273
+Firestorm (1998) score 6.746057909797214
+Love in the Afternoon (1957) score 6.098488019395653
+Microcosmos: Le peuple de l'herbe (1996) score 5.9818834373496905
+Oscar & Lucinda (1997) score 5.929472626015325
+Once Upon a Time... When We Were Colored (1995) score 5.866840368180183
+Deceiver (1997) score 5.8039701069467
+Amateur (1994) score 5.775223397773997
+City of Lost Children, The (1995) score 5.698794918324571
+Die xue shuang xiong (Killer, The) (1989) score 5.617012674294066
+
+
+Esto es porque con cada ejecucion el modelo va aprendiendo mas sobre los gustos del usuario.
+Es similar cuando en YouTube le das update y te devuelve nuevas recomendaciones
