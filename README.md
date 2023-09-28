@@ -1,88 +1,131 @@
 # bigdata_python_spark
 
-Anaconda
+The following software was used to carry out this project:
 
-El software se obtiene de la siguiente liga
+- Python 3.7.3
+- Jdk of Java 1.8_u60 or higher
+- Jre of Java 1.8_u60 or higher
+- Apache Spark 2.4.3
+- winutils.exe
 
-https://anaconda.org
+## Python
 
-Debido a que esta instalación se hizo en Windows 7, se obtuvo la versión de Anaconda3 4.4.0 para 64 bits, de la siguente liga
+In the following link is the version of Python 3.7.3
 
-https://repo.anaconda.com/archive/
+https://www.python.org/downloads/release/python-373/
 
-Una vez instalado anaconda, se abre su navegador y se crea un nuevo ambiente indicando que se requiere python 3.5, esto es debido a que Spark funciona con python 3.5.
+To install Python, run the file python-3.7.3-amd64.exe which was downloaded from the link. When executing the file, in the same process it indicates that if you want to save the Python variable in the environment variables, so it is no longer necessary to add them when finishing the installation.
 
-Si se tiene una versión diferente de python previamente instalado, no es necesario desinstalarlo ya que al momento de crear el ambiente con anaconda la versión de python que se indica será instalada para dicho ambiente.
+A cmd terminal is opened and validated, execute the next command
 
-Java
+```
+python --version
+```
 
-Se debe de instalar el jdk y jre, por lo menos debe de instalarse la version 8 con la actualizacion 60 jdk-8u60-windows-i586. Dentro del instalador viene el jdk y el jre, se deben de instalar sobre las carpetas C:\jdk y C:\jre respectivamente.
+Python has a library with which you can install plugins on the command line called pip. Copy the script from the following link into a notepad
 
-De la siguiente ruta vienen diferentes versiones de java 8
+https://bootstrap.pypa.io/get-pip.py
+
+Save the copied script as get-pip.py and open a cmd terminal in the path where you saved the file and executed the following command
+
+```
+python get-pip.py
+```
+
+The following environment variable must be created
+
+```
+PIP_HOME = C:\Users\.....\AppData\Local\Programs\Python\Python37
+```
+The %PIP_HOME%\Scripts variable is added to the Path variable.
+
+## Java
+
+In the following link there are different versions of Java 8
 
 https://www.oracle.com/mx/java/technologies/javase/javase8-archive-downloads.html
 
-Spark
+To install jdk and jre, run the file jdk-...-i586.exe which was downloaded from the link. When executing the file, the paths C:\jdk and C:\jre must be indicated when installing each one. When the jdk and jre are installed, the following environment variable must be created
 
-De la siguiente liga se pueden ver diferentes versiones de Spark
+```
+JAVA_HOME = C:\jdk
+```
+
+The %JAVA_HOME%\bin variable is added to the Path variable.
+
+A cmd terminal is opened and it is validated that any of the following commands are valid.
+
+```
+java
+java --version
+```
+
+## Spark
+
+In the following link there is the version of Apache Spark 2.4.3
 
 https://archive.apache.org/dist/spark/
 
-Como es Windows 7 donde se está realizando la instalación se baja la version spark-2.4.3-bin-hadoop2.7.tgz. Como el archivo viene con extension .tgz, se debe de tener instalado winrar para poder abrirlo.
+Once you have the spark-2.4.3-bin-hadoop2.7.tgz file, you must create the C:\spark directory and copy all the contents of the file to that path.
 
-Al abrir el archivo el contenido del mismo se debe de copiar a la carpeta C:\spark
+Once the content has been copied, look in the C:\spark\conf directory for the log4j.properties.template file and rename it as log4j.properties. Then open the renamed file with a text editor and on the next line of the file
 
-Una vez que el contenido se pasó a la carpeta de de spark, en la carpeta C:\spark. Se debe de buscar en la carpeta C:\spark\conf el archivo log4j.properties.template y renombrarlo como log4j.properties. Despues se abre el archivo renmbrado con un editor de texto y en la siguiente linea del archivo
-
+```
 log4j.rootCategory=INFO, console
+```
 
-Se debe de cambiar por
+It should be changed to
 
+```
 log4j.rootCategory=ERROR, console
+```
 
-Esto se hace para que al momento de ejecutar comandos de Spark en una terminal esta no se llene de información que no es necesaria.
+This is done so that when executing Spark commands in a terminal, it does not fill up with information that is not necessary. The following environment variable must be created
 
-WinUtils
+```
+SPARK_HOME = C:\spark
+```
 
-Debido a que en windows no se puede utilizar Spark de forma nativa, se debe de bajar el archivo winutils.exe, en la siguente liga vienen diferentes versiones del archivo
+The %SPARK_HOME%\bin variable is added to the Path variable.
+
+## Winutils
+
+In the following link is the winutils software with version hadoop 2.7
 
 https://github.com/steveloughran/winutils/tree/master
 
-Se baja un archivo para version de hadoop 2.7. Este archivo se debe de poner en la carpeta C:\winutils\bin
+You must create the C:\winutils\bin directory and copy the winutils.exe file to that path. Once the file has been copied, the following environment variable must be created
 
-Activacion de Spark
-
-Una vez hecho estos pasos se crean la siguientes variables de ambiente
-
-JAVA_HOME = C:\jdk
-SPARK_HOME = C:\spark
+```
 HADOOP_HOME = C:\winutils
+```
 
-Se agregan las variables %JAVA_HOME%\bin, %SPARK_HOME%\bin y %HADOOP_HOME%\bin a la variable Path
+The %HADOOP_HOME%\bin variable is added to the Path variable.
 
-Una vez hecho esto se abre una terminal y ejecutan los siguientes comandos
+A cmd terminal is opened and validated, execute the nexts commands, if everything works correctly, the Spark environment will start.
 
-cd /spark
+```
+cd C:\spark
 pyspark
+```
 
-El comando pyspark levanta el ambiente de Spark, si todo funciona correctamente debe de salir al final lo siguiente
+If everything works correctly, the following should appear at the end
 
+```
 Welcome to
-\_**\_ **
-/ **/** **\_ \_\_\_**/ /**
-_\ \/ _ \/ \_ `/ **/ '_/
-/** / .**/\_,_/_/ /_/\_\ version 2.4.3
-/\_/
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /__ / .__/\_,_/_/ /_/\_\   version 2.4.3
+      /_/
 
 Using Python version 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019 22:22:05)
 SparkSession available as 'spark'.
+>>>
+```
 
-> > >
+While Spark is activated or a program is running, you can go to the following link
 
-Mientras este activado Spark o se esté ejecutando algún programa, se puede ir a la siguiente liga
+localserver: 4040
 
-localhost:4040
-
-Ahi se encuentra la consola grafica de Spark
-
-Los archivos que se necesitan, ya se encuentran en la carpeta de datos. Correran bien si se respeta la jerarquía del proyecto, de lo contrario se deberan de hacer las modificaciones pertinentes en los programas para que apunten a las nuevas rutas donde se depositaran los archivos.
+Here is the Spark graphical console.
