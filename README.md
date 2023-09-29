@@ -126,6 +126,6 @@ SparkSession available as 'spark'.
 
 While Spark is activated or a program is running, you can go to the following link
 
-localserver: 4040
+http://localhost:4040/
 
 Here is the Spark graphical console.
